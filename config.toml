@@ -1,0 +1,6 @@
+title = "Adrien Lemaire's site"
+# replace the url below with yours
+base_url = "https://example.com"
+
+[extra]
+# Put all your custom variables here
