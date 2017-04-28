@@ -17,7 +17,7 @@
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-43335571-1', 'auto');
+          ga('create', {{ config.extra.google_analytics }}, 'auto');
           ga('send', 'pageview');
 
         </script>
@@ -27,23 +27,24 @@
 
     <aside class="sidebar">
         <div class="sidebar__content">
-            <h1>Adrien Lemaire</h1>
+            <h1>{{ config.title }}</h1>
             <p>
-                Coder and entrepreneur living in Osaka. <br/>
-                <b>Available for contract</b>
+                {{ config.extra.description }}
             </p>
 
             <ul class="sidebar__nav">
                 <li><a href="/">Blog</a></li>
+                <!--
                 <li><a href="/is-working-on">Projects</a></li>
                 <li><a href="/presenting-himself">About</a></li>
+                -->
             </ul>
 
             <div class="sidebar__social">
-                <a href="mailto:lemaire.adrien@gmail.com"><i class="icon-mail"></i></a>
-                <a href="https://github.com/Fandekasp" target="_blank"><i class="icon-github"></i></a>
-                <a href="https://www.linkedin.com/in/adrienlemaire" target="_blank"><i class="icon-linkedin"></i></a>
-                <a href="https://twitter.com/Fandekasp" target="_blank"><i class="icon-twitter"></i></a>
+                <a href="mailto:{{ config.extra.email }}"><i class="icon-mail"></i></a>
+                <a href="https://github.com/{{ config.extra.github }}" target="_blank"><i class="icon-github"></i></a>
+                <a href="https://www.linkedin.com/in/{{ config.extra.linkedin }}" target="_blank"><i class="icon-linkedin"></i></a>
+                <a href="https://twitter.com/{{ config.extra.twitter }}" target="_blank"><i class="icon-twitter"></i></a>
                 <a href="/index.xml"><i class="icon-rss"></i></a>
             </div>
         </div>
