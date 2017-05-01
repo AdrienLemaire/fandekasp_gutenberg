@@ -1,7 +1,17 @@
 .content {
-  margin-left: $sidebar-width + 3rem;
-  margin-right: 3rem;
+  margin-left: $sidebar-width;
+  max-width: None;
   padding-bottom: 4rem;
+
+  section {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: None;
+
+    article {
+      max-width: $max-width;
+    }
+  }
 }
 
 // Some non-layout things here but meh
@@ -66,7 +76,7 @@
 }
 
 
-@include respond-to('small') {
+@include respond-to('medium') {
   .sidebar {
     display: block;
     position: inherit;
