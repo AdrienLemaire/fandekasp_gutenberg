@@ -626,3 +626,7 @@ Open Source Contributions made with this article:
   themes](https://github.com/acrisci/i3-style/pull/35) in i3-style.
 * Asked neovim-remote to [fix the nvr --serverlist
   option](https://github.com/mhinz/neovim-remote/issues/40).
+
+
+Feel free to contact me if you have any question, comment or request regarding
+this article, and I'll keep it updated when I find some time!
